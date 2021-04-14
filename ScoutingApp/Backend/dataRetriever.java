@@ -31,7 +31,7 @@ public class dataRetriever{
             }
             String[][] scouting2DArray = new String[lines.size()][0];
             lines.toArray(scouting2DArray);
-            for(int row = 0; row<scouting2DArray.length; row++){
+            /*for(int row = 0; row<scouting2DArray.length; row++){
                 for(int column = 0; column<scouting2DArray[0].length; column++){
                     if(column<scouting2DArray[0].length-1){
                         System.out.print(scouting2DArray[row][column]+ ", ");
@@ -41,6 +41,7 @@ public class dataRetriever{
                     }
                 }
             }
+            */
             myReader.close();
             return scouting2DArray;
         }
@@ -49,5 +50,18 @@ public class dataRetriever{
         }
         String[][] blank2DArray = new String[0][0];
         return blank2DArray;
+    }
+    public void printData(String[][]data){
+        for(int row = 0; row<data.length; row++){
+                for(int column = 0; column<data[0].length; column++){
+                    if(column<data[0].length-1){
+                        System.out.print(data[row][column]+ ", ");
+                    }
+                    else{
+                        System.out.println(data[row][column]);
+                    }
+                }
+        }
+
     }
 }
