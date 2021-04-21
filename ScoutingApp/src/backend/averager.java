@@ -1,4 +1,4 @@
-package java.backend;
+package backend;
 public class averager{
     public averager(){
     }

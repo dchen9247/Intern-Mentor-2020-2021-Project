@@ -1,5 +1,5 @@
 {
     "java.project.sourcePaths": [
-        "ScoutingApp/src/java/backend"
+        "ScoutingApp/src/backend"
     ]
 }
